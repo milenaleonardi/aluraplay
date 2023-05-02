@@ -1,0 +1,36 @@
+/* CABEÇALHO */
+
+.cabecalho__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+}
+
+.cabecalho__pesquisar__item {
+  display: none;
+}
+
+/* RODAPÉ */
+
+.rodape__container {
+  display: flex;
+  /* flex-direction: column;
+  flex-wrap: wrap; quebra linhas/colunas de forma responsiva */
+  flex-flow: column wrap;
+}
+
+@media screen and (min-width: 834px) {
+  /* CABEÇALHO */
+
+  .cabecalho__pesquisar__item {
+    display: block;
+  }
+
+  /* RODAPÉ */
+
+  .rodape__container {
+    justify-content: space-between;
+  }
+}
